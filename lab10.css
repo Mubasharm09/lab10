@@ -1,0 +1,94 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+
+body{
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+}
+
+.dock{
+display: flex;
+gap: 25px;
+padding: 18px 35px;
+margin-bottom: 40px;
+border-radius: 25px;
+background: rgba(255,255,255,0.08);
+backdrop-filter: blur(15px);
+box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+transition: 0.3s;
+}
+.container{
+display: flex;flex-direction: column;
+align-items: center;
+background-color: black;
+
+}
+#heading,#message{
+    
+border: solid 1px white;
+font-weight: bold;
+color: black;padding: 10px;
+border-radius: 5px;
+
+}
+#startBtn{
+background-color: #3498db;
+color: white;
+margin: auto;
+}
+.icon{
+font-size: 38px;
+color: white;
+cursor: pointer;
+transition: 0.25s;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.icon:hover i{
+    transform: translateY(-15px) scale(1.7);
+}
+.icon:hover i{
+    animation: bounce 0.4s ease
+}
+@keyframes bounce{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-8px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.dock:hover{
+    transform: scale(1.05s);
+}
+
+
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+
